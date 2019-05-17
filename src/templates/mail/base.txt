@@ -1,0 +1,7 @@
+メールのベースです
+
+{% block mail_content %}
+
+{% endblock %}
+
+{% include './signature.txt' %}

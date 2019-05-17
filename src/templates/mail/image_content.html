@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% load staticfiles %}
+
+{% block mail_content %}
+
+<strong>{{ message }}</strong>
+
+{# locahostで参照させるため、 `//` だけでなく、schemeも使う #}
+<p><img src="{{ request.scheme }}://{{ request.get_host }}
+{% static 'images/shinanogold.png' %}" alt="" /></p>
+
+{% endblock %}
